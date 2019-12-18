@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane onKeyReleased="#ScreenLoaded" onMouseEntered="#ScreenLoaded" prefHeight="680.0" prefWidth="534.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.SavedRecipes">
+   <children>
+      <ImageView fx:id="background" fitHeight="680.0" fitWidth="534.0" layoutX="1.0" opacity="0.9" pickOnBounds="true" preserveRatio="true" scaleX="1.01">
+         <image>
+            <Image url="@../../assets/images/background.jpg" />
+         </image>
+      </ImageView>
+      <ListView fx:id="recipeList" layoutX="56.0" layoutY="72.0" prefHeight="487.0" prefWidth="423.0" />
+      <Button layoutX="56.0" layoutY="570.0" mnemonicParsing="false" onAction="#LoadSelectedRecipe" prefHeight="30.0" prefWidth="161.0" text="Load Selected Recipe">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="320.0" layoutY="570.0" mnemonicParsing="false" onAction="#DeleteSelectedRecipe" text="Delete Selected Recipe">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="187.0" layoutY="636.0" mnemonicParsing="false" onAction="#ReturnToCalculator" prefHeight="30.0" prefWidth="161.0" text="Return to Calculator">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="144.0" layoutY="22.0" text="SAVED RECIPES">
+         <font>
+            <Font name="Britannic Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="screenPane" prefHeight="600.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="builder.GodScreenController">
+   <children>
+      <Label fx:id="lblGod" alignment="CENTER" contentDisplay="CENTER" prefHeight="62.0" prefWidth="917.0" text="?godName" textAlignment="CENTER">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="godListScreen" layoutX="420.0" layoutY="546.0" mnemonicParsing="false" onAction="#godListScreen" text="Back to god select" />
+      <ImageView fx:id="godImage" fitHeight="128.0" fitWidth="128.0" layoutX="697.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/hover.png" />
+         </image></ImageView>
+      <Label layoutX="75.0" layoutY="70.0" text="Health:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="100.0" text="Phys Def:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="130.0" text="Mag Def:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtHealth" editable="false" layoutX="165.0" layoutY="70.0" prefHeight="25.0" prefWidth="65.0" />
+      <TextField fx:id="txtPhysDef" editable="false" layoutX="165.0" layoutY="100.0" prefHeight="25.0" prefWidth="65.0" />
+      <TextField fx:id="txtPhysHealth" editable="false" layoutX="345.0" layoutY="100.0" prefHeight="25.0" prefWidth="65.0" />
+      <TextField fx:id="txtMagDef" editable="false" layoutX="165.0" layoutY="130.0" prefHeight="25.0" prefWidth="65.0" />
+      <Label layoutX="245.0" layoutY="100.0" text="Phys Health:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="245.0" layoutY="130.0" text="Mag Health:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMagHealth" editable="false" layoutX="345.0" layoutY="130.0" prefHeight="25.0" prefWidth="65.0" />
+      <Label layoutX="75.0" layoutY="160.0" text="HP5:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtHP5" editable="false" layoutX="165.0" layoutY="160.0" prefHeight="25.0" prefWidth="65.0" />
+      <Label layoutX="75.0" layoutY="220.0" text="Mana:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMana" editable="false" layoutX="165.0" layoutY="220.0" prefHeight="25.0" prefWidth="65.0" />
+      <Label layoutX="75.0" layoutY="250.0" text="MP5:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMP5" editable="false" layoutX="165.0" layoutY="250.0" prefHeight="25.0" prefWidth="65.0" />
+      <Label fx:id="lblDamage" layoutX="75.0" layoutY="310.0" text="?damageType Power:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtPower" editable="false" layoutX="165.0" layoutY="310.0" prefHeight="25.0" prefWidth="65.0" />
+      <Label layoutX="75.0" layoutY="340.0" text="Flat Pen:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFlatPen" editable="false" layoutX="165.0" layoutY="340.0" prefHeight="25.0" prefWidth="65.0" />
+      <TextField fx:id="txtPercPen" editable="false" layoutX="165.0" layoutY="370.0" prefHeight="25.0" prefWidth="65.0" />
+      <Label layoutX="75.0" layoutY="370.0" text="\%Pen:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="245.0" layoutY="310.0" text="Movement:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtMovement" editable="false" layoutX="345.0" layoutY="310.0" prefHeight="25.0" prefWidth="65.0" />
+      <GridPane fx:id="itemGrid" gridLinesVisible="true" layoutX="159.0" layoutY="417.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+      </GridPane>
+      <Label layoutX="691.0" layoutY="233.0" text="Level:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLevel" editable="false" layoutX="734.0" layoutY="233.0" prefHeight="25.0" prefWidth="33.0" />
+      <Button fx:id="btnIncreaseLevel" layoutX="772.0" layoutY="233.0" mnemonicParsing="false" onAction="#increasePressed" prefHeight="25.0" prefWidth="26.0" text="+" />
+      <Button fx:id="btnDecreaseLevel" layoutX="805.0" layoutY="233.0" mnemonicParsing="false" onAction="#decreasePressed" prefHeight="25.0" prefWidth="26.0" text="-" />
+   </children>
+</AnchorPane>
